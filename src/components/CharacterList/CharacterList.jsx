@@ -10,8 +10,10 @@ const CharacterList = () => {
     </li>  
   );
 
+  if(loading) return <h1>Loading...</h1>
+  if(error) return <h1>Something went wrong. Try again</h1>
   return (
-
+    
   );
 };
 
