@@ -22,6 +22,8 @@ export const getSingleCharacter = async(id) => {
   return {
     id: json.id,
     name: json.name,
-    image: json.image
+    image: json.image,
+    status: json.status,
+    species: json.species
   };
 };
