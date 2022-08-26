@@ -34,10 +34,10 @@ describe('CharacterDetail component', () => {
     });
   });
 
-  // it('display error message on error', async() => {
-  //   getSingleCharacter.mockRejectedValue('Unable to fetch from API');
-  //   render(<CharacterDetail />);
+  it('display error message on error', async() => {
+    getSingleCharacter.mockRejectedValue('Unable to fetch from API');
+    render(<CharacterDetail />);
 
-  //   return screen.findByText('Something went wrong. Try again');
-  // });
+    return screen.findByText('Something went wrong. Try again');
+  });
 });
