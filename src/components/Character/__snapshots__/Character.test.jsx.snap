@@ -3,7 +3,7 @@
 exports[`Character component renders Character 1`] = `
 <DocumentFragment>
   <a
-    href="/detail/undefined"
+    href="/detail/1"
   >
     <figure>
       <img
