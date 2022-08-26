@@ -9,6 +9,7 @@ describe('Character component', () => {
     const { asFragment } = render(
       <MemoryRouter>
         <Character 
+          id={1}
           name="something" 
           image="https://www.something.com/image/200/200"
         />
