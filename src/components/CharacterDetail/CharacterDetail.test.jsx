@@ -17,14 +17,11 @@ describe('CharacterDetail component', () => {
       }
     );
   });
-  it('displays a loading page', () => {
+
+  it('displays a loading page and then Detail of Character', async() => {
     render(<CharacterDetail />);
 
     screen.getAllByText('Loading...');
-  });
-
-  it('displays a Detail of Characters', async() => {
-    render(<CharacterDetail />);
 
     const characterDetail = await screen.findByTestId('characterDetail');
 
