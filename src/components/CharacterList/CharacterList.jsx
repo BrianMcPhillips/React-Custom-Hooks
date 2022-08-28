@@ -3,7 +3,14 @@ import { useCharacters } from '../../hooks/characters';
 import Character from '../Character/Character';
 
 const CharacterList = () => {
-  const { loading, characters, error, page, pageUp, pageDown } = useCharacters();
+  const { 
+    loading, 
+    characters, 
+    error, 
+    page, 
+    pageUp, 
+    pageDown 
+  } = useCharacters();
   const characterStuff = characters.map(character => 
     <li key={character.id}>
       <Character {...character}/>
