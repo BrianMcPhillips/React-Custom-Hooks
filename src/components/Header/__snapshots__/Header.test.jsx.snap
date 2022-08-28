@@ -2,9 +2,13 @@
 
 exports[`Header component renders Header 1`] = `
 <DocumentFragment>
-  <header>
+  <header
+    class="header"
+  >
     Rick and Morty
-    <div>
+    <div
+      class="links"
+    >
       <a
         href="/"
       >
