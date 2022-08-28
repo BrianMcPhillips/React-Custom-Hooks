@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 const Header = () => (
   <header className={styles.header}>
     Rick and Morty
-    <div>
+    <div className={styles.links}>
       <Link to={'/'}>
         <button>Home</button>
       </Link>
