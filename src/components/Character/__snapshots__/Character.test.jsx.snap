@@ -5,7 +5,9 @@ exports[`Character component renders Character 1`] = `
   <a
     href="/detail/1"
   >
-    <figure>
+    <figure
+      class="box"
+    >
       <img
         alt="something"
         src="https://www.something.com/image/200/200"
