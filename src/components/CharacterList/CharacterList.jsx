@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCharacters } from '../../hooks/characters';
 import Character from '../Character/Character';
+import styles from './CharacterList.module.css';
 
 const CharacterList = () => {
   const { 
@@ -21,14 +22,20 @@ const CharacterList = () => {
   if(error) return <h1>Something went wrong. Try again</h1>;
   return (
     <div>
-      <ul data-testid="characterList">
+      <ul data-testid="characterList" className={styles.list}>
         {characterStuff}
       </ul>
-      {page}
-      {
-        page > 1 && <button onClick={pageDown}>-</button>
-      }
-      <button onClick={pageUp}>+</button>
+      <div className={styles.page}>
+        <h5>Page {page} of 42</h5>
+        <div className={styles.buttons}>
+          {
+            page > 1 && <button onClick={pageDown}>-</button>
+          }
+          {
+            page < 42 && <button onClick={pageUp}>+</button>
+          }
+        </div>
+      </div>
     </div>
   );
 };
